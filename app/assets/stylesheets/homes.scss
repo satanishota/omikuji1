@@ -26,9 +26,6 @@ h1 {
 #tab-menu li {
   list-style-type: none;
   width: 25%;
-}
-
-#tab-menu li a {
   color: #fff;
   text-decoration: none;
   display: block;
@@ -50,6 +47,7 @@ h1 {
 }
 
 #tab-contents .tab {
+  display: none;
   width: 100%;
   padding: 30px;
   background: #fff;
@@ -60,6 +58,18 @@ h1 {
 #tab-contents p {
   color: #000;
   line-height: 2.5;
+}
+
+#demo-01 {
+  display: none;
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+#demo-02 {
+  background: green;
+  width: 100px;
+  height: 100px;
 }
 
 .box2 {
