@@ -7,11 +7,16 @@ class HomesController < ApplicationController
     @food5 = Food.where(line_id: 5).order(:last_name)
     @kuji = Food.new
   end
-  
+
   def create
+    @kuji = Food.new
+    @color = params[:food][:color]
+    render :middle
   end
-  
+
+
   def middle
-    
+    @color = nil
   end
+
 end

@@ -10,21 +10,25 @@
       <li id="tab5" >らん</li>
 
      </ul>
+<%= form_with :model => @kuji, url:homes_path, method: :post, local: true  do |f| %>
 
     <div id="tab-contents">
-      <%= form_with :model => @kuji, url:middle_path, method: :post, local: true  do |f| %>
 
       <div id="tab1" class="tab">
         <% @food1.each do |food| %>
 
-    　　　<p><%= f.radio_button :color, food.kanji_name %></p>
-    　　　<p><%= f.radio_button :addresses, "residence"  %></p>
+    　　　<p><%= f.radio_button :color, food.color %>
+    　　　<span><%= food.kanji_name %></span>
+    　　　</p>
+
         <% end %>
       </div>
-      
+
       <div id="tab2" class="tab">
         <% @food2.each do |food| %>
-    　　　<p><%= food.kanji_name%></p>
+        <p><%= f.radio_button :color, food.color %>
+    　　　<span><%= food.kanji_name %></span>
+    　　　</p>
         <% end %>
       </div>
 
@@ -45,9 +49,10 @@
     　　　<p><%= food.kanji_name%></p>
         <% end %>
       </div>
-      <% end %>
+
     </div>
-    
+    <%= f.submit "確認画面へ進む", class: "btn btn-success " %>
+    <% end %>
 </div>
 
 
