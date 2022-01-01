@@ -38,28 +38,27 @@ $(function() {
     });
 });
 
-
-
 $(function() {
-    // showボタン
-    $('#btn-show-01').click(function() {
-        $('#demo-01').show();
-    });
-
-    // resetボタン
-    $('#btn-reset-01').click(function() {
-        $('#demo-01').hide();
+    // hideボタン
+    $('#tab3').click(function() {
+      $('.tab[id = "tab3"]').show();
+        $('.tab[id != "tab3"]').hide();
     });
 });
 
 $(function() {
     // hideボタン
-    $('#btn-hide-02').click(function() {
-        $('#demo-02').hide();
-    });
-
-    // resetボタン
-    $('#btn-reset-02').click(function() {
-        $('#demo-02').show();
+    $('#tab4').click(function() {
+      $('.tab[id = "tab4"]').show();
+        $('.tab[id != "tab4"]').hide();
     });
 });
+
+$(function() {
+    // hideボタン
+    $('#tab5').click(function() {
+      $('.tab[id = "tab5"]').show();
+        $('.tab[id != "tab5"]').hide();
+    });
+});
+

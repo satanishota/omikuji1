@@ -3,44 +3,53 @@
 <div class="wrap">
     <ul id="tab-menu">
 
-      <li id="tab1" class="active">あか</li>
-      <li id="tab2" class="">さた</li>
-      <li id="tab3" class="">さた</li>
-      <li id="tab4" class="">さた</li>
-      <li id="tab5" class="">さた</li>
-      <!--<li><a href="/tab3/" class="">には</a></li>-->
-      <!--<li><a href="#tab4" class="">まや</a></li>-->
-      <!--<li><a href="#tab5" class="">らん</a></li>-->
+      <li id="tab1" >あか</li>
+      <li id="tab2" >さた</li>
+      <li id="tab3" >には</li>
+      <li id="tab4" >まや</li>
+      <li id="tab5" >らん</li>
+
      </ul>
 
     <div id="tab-contents">
+      <%= form_with :model => @kuji, url:middle_path, method: :post, local: true  do |f| %>
+
       <div id="tab1" class="tab">
-        <p>TAB1</p>
+        <% @food1.each do |food| %>
+
+    　　　<p><%= f.radio_button :color, food.kanji_name %></p>
+    　　　<p><%= f.radio_button :addresses, "residence"  %></p>
+        <% end %>
       </div>
+      
       <div id="tab2" class="tab">
-        <p>TAB2の</p>
+        <% @food2.each do |food| %>
+    　　　<p><%= food.kanji_name%></p>
+        <% end %>
       </div>
 
       <div id="tab3" class="tab">
-        <p>TAB3。</p>
+        <% @food3.each do |food| %>
+    　　　<p><%= food.kanji_name%></p>
+        <% end %>
       </div>
 
       <div id="tab4" class="tab">
-        <p>TAB。</p>
+        <% @food4.each do |food| %>
+    　　　<p><%= food.kanji_name%></p>
+        <% end %>
       </div>
 
       <div id="tab5" class="tab">
-        <p>TAB５。</p>
+        <% @food5.each do |food| %>
+    　　　<p><%= food.kanji_name%></p>
+        <% end %>
       </div>
+      <% end %>
     </div>
+    
 </div>
-<div id="demo-01"></div>
-<button id="btn-show-01">show</button>
-<button id="btn-reset-01">reset</button>
 
-<div id="demo-02"></div>
-<button id="btn-hide-02">hide</button>
-<button id="btn-reset-02">reset</button>
 
 <div class="box2"></div>
 

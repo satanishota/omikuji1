@@ -10,12 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_31_091008) do
+ActiveRecord::Schema.define(version: 2022_01_01_091028) do
 
   create_table "foods", force: :cascade do |t|
     t.string "last_name", null: false
     t.string "kanji_name", null: false
     t.string "color", null: false
+    t.integer "line_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lines", force: :cascade do |t|
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
