@@ -1,5 +1,5 @@
 <h1>top</h1>
-
+<p id="alert"><%= alert %></p>
 <div class="wrap">
     <ul id="tab-menu">
 
@@ -10,7 +10,7 @@
       <li id="tab5" >らん</li>
 
      </ul>
-<%= form_with :model => @kuji, url:homes_path, method: :post, local: true  do |f| %>
+<%= form_with :model => @kuji, url:middle_path, local: true  do |f| %>
 
     <div id="tab-contents">
 
@@ -34,19 +34,25 @@
 
       <div id="tab3" class="tab">
         <% @food3.each do |food| %>
-    　　　<p><%= food.kanji_name%></p>
+    　　　<p><%= f.radio_button :color, food.color %>
+    　　　<span><%= food.kanji_name %></span>
+    　　　</p>
         <% end %>
       </div>
 
       <div id="tab4" class="tab">
         <% @food4.each do |food| %>
-    　　　<p><%= food.kanji_name%></p>
+    　　　<p><%= f.radio_button :color, food.color %>
+    　　　<span><%= food.kanji_name %></span>
+    　　　</p>
         <% end %>
       </div>
 
       <div id="tab5" class="tab">
         <% @food5.each do |food| %>
-    　　　<p><%= food.kanji_name%></p>
+    　　　<p><%= f.radio_button :color, food.color %>
+    　　　<span><%= food.kanji_name %></span>
+    　　　</p>
         <% end %>
       </div>
 

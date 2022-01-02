@@ -62,3 +62,54 @@ $(function() {
     });
 });
 
+$(function() {
+    $('.tora1').click(function() {
+     $('.tora1').addClass('tora1-a');
+  });
+});
+
+$(function() {
+    $('.tora2').click(function() {
+     $('.tora2').addClass('tora2-a');
+  });
+});
+
+$(function() {
+    $('.tora3').click(function() {
+     $('.tora3').addClass('tora3-a');
+  });
+});
+
+$(function() {
+    $('.tora4').click(function() {
+     $('.tora4').addClass('tora4-a');
+  });
+});
+
+$(function() {
+    $('.tora5').click(function() {
+     $('.tora5').addClass('tora5-a');
+  });
+});
+
+$(function() {
+    $('.tora6').click(function() {
+     $('.tora6').addClass('tora6-a');
+  });
+});
+
+$(function() {
+    $('.tora7').click(function() {
+     $('.tora7').addClass('tora7-a');
+  });
+});
+
+$(function (){
+  $('.document').slideDown(function (){
+    $('.document').css({
+      'background-color': '#0000FF',
+      'width': '200px',
+      'height': '100px'
+    }).slideUp(1000);
+  });
+});
