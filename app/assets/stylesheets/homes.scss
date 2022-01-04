@@ -80,7 +80,7 @@ h1 {
 .box1 {
   height: 500px;
   width: auto;
-  
+
 }
 
 .tora1 {
@@ -174,9 +174,34 @@ h1 {
   background-image: url(tora7.png);
 }
 
-.document {
-  font-size: 30px;
-  display: none;
+
+
+.myForm1 {
+ background: black;
+ height: 70px;
+ width: 180px;
+ margin: 0 auto;
+
 }
+
+.myForm2 {
+ display: none;
+}
+.myForm3 {
+ padding: 10px;
+}
+
+
+.result {
+  width: 200px;
+  height: 400px;
+}
+
+.act {
+
+  font-size: 30px;
+
+}
+
 
 

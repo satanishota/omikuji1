@@ -104,12 +104,18 @@ $(function() {
   });
 });
 
-$(function (){
-  $('.document').slideDown(function (){
-    $('.document').css({
-      'background-color': '#0000FF',
-      'width': '200px',
-      'height': '100px'
-    }).slideUp(1000);
-  });
-});
+
+// var titl = "javascriptが使えました";
+// alert(titl);
+
+let str = "今年の健康運を上げるために食材を探しますか？";
+let mycnt = 0;
+let myFormMes = 0;
+let myForm = 0;
+
+function myFunc(){
+     document.myForm.myFormMes.value = str.substring( 0 , mycnt ) + " ";
+     mycnt = ( mycnt == str.length ) ? 0 : mycnt+1;
+}
+setInterval("myFunc()",100);
+

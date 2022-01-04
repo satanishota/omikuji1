@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resource :homes, only: [:create], path: '/middle'
   root to: 'homes#top'
   get 'middle' => 'homes#middle'
+  get 'turn' => 'homes#turn'
 end

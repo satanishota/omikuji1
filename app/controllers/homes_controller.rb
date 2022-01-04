@@ -30,6 +30,10 @@ class HomesController < ApplicationController
   def middle
     @color = nil
   end
+  
+  def turn
+    @iro
+  end
 
 
 end
