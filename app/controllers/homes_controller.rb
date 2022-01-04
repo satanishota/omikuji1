@@ -1,4 +1,5 @@
 class HomesController < ApplicationController
+  
   def top
     @food1 = Food.where(line_id: 1).order(:last_name)
     @food2 = Food.where(line_id: 2).order(:last_name)

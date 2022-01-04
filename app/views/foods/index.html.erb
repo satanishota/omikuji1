@@ -1,0 +1,7 @@
+<h1>Foods#index</h1>
+
+<% @foods.each do |food| %>
+  <p>名前</p>
+  <p><%= food.last_name %><p>
+  <p><%= link_to "削除", destroy_food_path(food.id), method: :delete %><p>
+<% end %>

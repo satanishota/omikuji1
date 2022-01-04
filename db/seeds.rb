@@ -6,27 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Line.create!(
-    name: 'あ',
-
-  )
-Line.create!(
-    name: 'か',
-
-  )
-Line.create!(
-    name: 'さたな',
-
-  )
-Line.create!(
-    name: 'はま',
-
-  )
-Line.create!(
-    name: 'やらわ',
-
-  )
-
 Food.create!(
     last_name: 'くろまめ',
     kanji_name: '黒豆',

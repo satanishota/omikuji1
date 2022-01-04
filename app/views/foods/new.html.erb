@@ -1,0 +1,16 @@
+new
+
+<%= form_with model: @event, url:admin_events_path, local:true do |f| %>
+  <h4>名前</h4>
+  <%= f.text_field :last_name %>
+  <h4>漢字</h4>
+  <%= f.text_area :kanji_name %>
+  <h4>色</h4>
+  <%= f.collection_select(:color, yellow, orange, red, green, brown, white, black) %>
+  <%= f.text_field :color %>
+  <h4>行</h4>
+  <%= f.number_field :line_id %>
+  <h4>あか１、さた２、なは３、まや４、らん５、</h4>
+
+  <%= f.submit '作成' %>
+<% end %>

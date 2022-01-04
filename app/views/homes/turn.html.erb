@@ -23,9 +23,34 @@ $(document).ready(function () {
   $('#result').html(`<a href= ${url} class="act" target="_blank" >MESHITERO</a>`);
 });
 
+var xmlHttpRequest = new XMLHttpRequest();
+xmlHttpRequest.onreadystatechange = function()
+{
+    console.log(this.readyState);
+    if( this.readyState == 4 && this.status == 200 )
+    {
+        if( this.response )
+        {
+            console.log(this.response);
+            // 読み込んだ後処理したい内容をかく
+            console.log(this.response.photos.photo[1].url_h);
+            document.getElementById("photo1").setAttribute('src',this.response.photos.photo[1].url_h);
+            //$('#photo1').attr('src',this.response.photos.photo[1].url_h);
+            console.log(document.getElementById("photo1"));
+
+        }
+    }
+}
+
+xmlHttpRequest.open( 'GET', url , true );
+xmlHttpRequest.responseType = 'json';
+xmlHttpRequest.send( null );
   </script>
   <div id="result"></div>
   </head>
+
+<img src="" id="photo1" width="300px">
+  
 
 
 
