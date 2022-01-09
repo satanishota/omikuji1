@@ -26,7 +26,9 @@ $(function() {
     // hideボタン
     $('#tab1').click(function() {
       $('.tab[id = "tab1"]').show();
+      $('.tab[id = "tab1"]').css({ 'margin': '0 0 0 10%'});
         $('.tab[id != "tab1"]').hide();
+        
     });
 });
 
@@ -34,6 +36,7 @@ $(function() {
     // hideボタン
     $('#tab2').click(function() {
       $('.tab[id = "tab2"]').show();
+      $('.tab[id = "tab2"]').css({ 'margin': '0 0 0 20%'});
         $('.tab[id != "tab2"]').hide();
     });
 });
@@ -42,6 +45,7 @@ $(function() {
     // hideボタン
     $('#tab3').click(function() {
       $('.tab[id = "tab3"]').show();
+      $('.tab[id = "tab3"]').css({ 'margin': '0 0 0 30%'});
         $('.tab[id != "tab3"]').hide();
     });
 });
@@ -50,6 +54,7 @@ $(function() {
     // hideボタン
     $('#tab4').click(function() {
       $('.tab[id = "tab4"]').show();
+      $('.tab[id = "tab4"]').css({ 'margin': '0 0 0 40%'});
         $('.tab[id != "tab4"]').hide();
     });
 });
@@ -58,6 +63,7 @@ $(function() {
     // hideボタン
     $('#tab5').click(function() {
       $('.tab[id = "tab5"]').show();
+      $('.tab[id = "tab5"]').css({ 'margin': '0 0 0 50%'});
         $('.tab[id != "tab5"]').hide();
     });
 });
@@ -105,7 +111,7 @@ $(function() {
 });
 
 
-// var titl = "javascriptが使えました";
+// var titl = "boxをタップして選んでください";
 // alert(titl);
 
 let str = "今年の健康運を上げるために食材を探しますか？";
