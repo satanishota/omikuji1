@@ -14,7 +14,7 @@ h1 {
 }
 
 .wrap {
-  width: 90%;
+  width: 80%;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -24,55 +24,182 @@ h1 {
 }
 
 #tab-menu li {
-  list-style-type: none;
-  width: 25%;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 20px;
-  text-align: center;
-  background: #000;
-  border: 1px solid #000;
-  border-bottom: none;
+    list-style-type: none;
+    width: 25%;
+    color: white;
+    display: block;
+    padding: 50px;
+    text-align: center;
+    background: red;
+    border: 3px solid yellow;
+    border-right: none;
 }
 
-#tab-menu .active {
-  background: #fff;
-  color: #000;
-}
 
 #tab-contents {
   display: flex;
-  flex-wrap: wrap;
+
 }
 
 #tab-contents .tab {
   display: none;
-  width: 100%;
-  padding: 30px;
-  background: #fff;
-  border: 1px solid #000;
-  border-top: none;
+  width: 50%;
+  padding: 10px;
+  background: rgba(255,0,0, 0.4);
 }
 
-#tab-contents p {
-  color: #000;
-  line-height: 2.5;
-}
+#tab-contents span {
+  color: black;
 
-#demo-01 {
-  display: none;
-  background: red;
-  width: 100px;
-  height: 100px;
 }
-#demo-02 {
-  background: green;
-  width: 100px;
+.btn-success {
+  justify-content: center;
+ padding: 10px;
   height: 100px;
+  width: 40%;
+  margin: 10px 200px;
 }
 
 .box2 {
   height: 500px;
   width: auto;
 }
+
+.box1 p {
+  margin: 0 auto;
+   width: 40%;
+   border: 3px solid black;
+   text-align: center;
+}
+
+.tora1 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+.tora1-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora1.png);
+}
+
+.tora2 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+.tora2-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora2.png);
+}
+
+.tora3 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+.tora3-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora3.png);
+}
+
+.tora4 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+.tora4-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora4.png);
+}
+
+.tora5 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+.tora5-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora5.png);
+}
+
+.tora6 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora1.png);
+}
+.tora6-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+
+.tora7 {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora6.png);
+}
+.tora7-a {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(tora7.png);
+}
+
+
+
+.myForm1 {
+ background: black;
+ height: 70px;
+ width: 180px;
+ margin: 0 auto;
+
+}
+
+.myForm2 {
+ display: none;
+}
+.myForm3 {
+ padding: 10px;
+}
+
+
+.result {
+  width: 200px;
+  height: 400px;
+}
+
+.geme {
+  font-size: 30px;
+}
+
+#photo1 {
+  display: block;
+    margin:  0 auto;
+}
+.box3 {
+  height: 100px;
+  width: auto;
+}
+
+.migi {
+  text-align: right;
+}
+

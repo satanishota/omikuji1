@@ -4,6 +4,8 @@ class CreateFoods < ActiveRecord::Migration[5.2]
       t.string :last_name, null: false
       t.string :kanji_name, null: false
       t.string :color, null: false
+      t.integer :line_id, null: false
+      
       t.timestamps
     end
   end

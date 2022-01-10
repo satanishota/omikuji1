@@ -1,0 +1,16 @@
+<h1>new_food</h1>
+
+<%= form_with model: @food, url:foods_path, local:true do |f| %>
+  <h4>名前</h4>
+  <%= f.text_field :last_name %>
+  <h4>漢字</h4>
+  <%= f.text_area :kanji_name %>
+  <h4>色</h4>
+  
+  <%= f.select :color, [['黄', "yellow"], ['オレンジ', "orange" ], ['赤', "red"],['緑', "green"],['茶', "brown"],['白', "White"],['黒', "black"]] %>
+
+  <h4>行</h4>
+ <%= f.select :line_id, {あか: 1, さた: 2, なは: 3, まや: 4, らん: 5} %>
+
+  <%= f.submit '作成' %>
+<% end %>

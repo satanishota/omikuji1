@@ -1,0 +1,69 @@
+<script>
+   alert("トラをタップしてください");
+</script>
+<% case @color %>
+<% when "yellow"  %>
+<diV class="box1">
+    <div class="tora1"></div>
+<p>イエロータイガーです。</p>
+</diV>
+
+<% when "orange"  %>
+<diV class="box1">
+    <div class="tora2"></div>
+<p>オレンジタイガーです。</p>
+</diV>
+<% when "red"  %>
+<diV class="box1">
+    <div class="tora3"></div>
+<p>レッドタイガーです。</p>
+</diV>
+
+<% when "green"  %>
+<diV class="box1">
+    <div class="tora4"></div>
+<p>グリーンタイガーです。</p>
+</diV>
+<% when "brown"  %>
+<diV class="box1">
+    <div class="tora5"></div>
+<p>ブラウンタイガーです。</p>
+</diV>
+<% when "white"  %>
+<diV class="box1">
+    <div class="tora6"></div>
+<p>ホワイトタイガーです。</p>
+</diV>
+<% when "black"  %>
+<diV class="box1">
+    <div class="tora7"></div>
+<p>ブラックタイガーです。</p>
+</diV>
+
+<% end %>
+
+
+<form name="myform" class="myForm1">
+<textarea type="text" cols="20" rows="3" name="myformes" class="myForm3"></textarea>
+</form>
+<script>
+    let str = "今年の健康運を上げるために食材を探しますか？";
+let mycnt = 0;//いま何個目の文字までを表示しているかのカウンターです
+// let myFormMes = 0;
+// let myForm = 0;
+
+function myFunc(){
+     document.myform.myformes.value = str.substring( 0 , mycnt ) + " ";
+    //  mycnt = ( mycnt == str.length ) ? 0 : mycnt+1;
+    //  myString = 変数.substring( 開始位置 , 終了位置+1 )
+    if ( mycnt == str.length )
+    mycnt = mycnt - 1;
+    else mycnt = mycnt + 1;
+}
+setInterval("myFunc()",200);
+    
+</script>
+
+<p class="geme">
+   <%= link_to "食べ物を見る ", turn_path %>
+</p>
