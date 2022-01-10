@@ -1,6 +1,6 @@
-今年の運勢は
-
-<%= @color %>
+<script>
+   alert("トラをタップしてください");
+</script>
 <% case @color %>
 <% when "yellow"  %>
 <diV class="box1">
@@ -43,10 +43,27 @@
 <% end %>
 
 
-<form name="myForm" class="myForm1">
-<textarea type="text" cols="20" rows="3" name="myFormMes" class="myForm3"></textarea>
+<form name="myform" class="myForm1">
+<textarea type="text" cols="20" rows="3" name="myformes" class="myForm3"></textarea>
 </form>
+<script>
+    let str = "今年の健康運を上げるために食材を探しますか？";
+let mycnt = 0;//いま何個目の文字までを表示しているかのカウンターです
+// let myFormMes = 0;
+// let myForm = 0;
+
+function myFunc(){
+     document.myform.myformes.value = str.substring( 0 , mycnt ) + " ";
+    //  mycnt = ( mycnt == str.length ) ? 0 : mycnt+1;
+    //  myString = 変数.substring( 開始位置 , 終了位置+1 )
+    if ( mycnt == str.length )
+    mycnt = mycnt - 1;
+    else mycnt = mycnt + 1;
+}
+setInterval("myFunc()",200);
+    
+</script>
 
 <p class="geme">
-   <%= link_to "tabemono ", turn_path %>
+   <%= link_to "食べ物を見る ", turn_path %>
 </p>

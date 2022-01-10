@@ -28,7 +28,7 @@ $(function() {
       $('.tab[id = "tab1"]').show();
       $('.tab[id = "tab1"]').css({ 'margin': '0 0 0 10%'});
         $('.tab[id != "tab1"]').hide();
-        
+
     });
 });
 
@@ -114,14 +114,4 @@ $(function() {
 // var titl = "boxをタップして選んでください";
 // alert(titl);
 
-let str = "今年の健康運を上げるために食材を探しますか？";
-let mycnt = 0;
-let myFormMes = 0;
-let myForm = 0;
-
-function myFunc(){
-     document.myForm.myFormMes.value = str.substring( 0 , mycnt ) + " ";
-     mycnt = ( mycnt == str.length ) ? 0 : mycnt+1;
-}
-setInterval("myFunc()",100);
 

@@ -38,7 +38,7 @@ h1 {
 
 #tab-contents {
   display: flex;
- 
+
 }
 
 #tab-contents .tab {
@@ -50,10 +50,10 @@ h1 {
 
 #tab-contents span {
   color: black;
- 
+
 }
 .btn-success {
-  justify-content: center; 
+  justify-content: center;
  padding: 10px;
   height: 100px;
   width: 40%;
@@ -65,7 +65,12 @@ h1 {
   width: auto;
 }
 
-
+.box1 p {
+  margin: 0 auto;
+   width: 40%;
+   border: 3px solid black;
+   text-align: center;
+}
 
 .tora1 {
   height: 300px;
@@ -181,11 +186,20 @@ h1 {
   height: 400px;
 }
 
-.act {
-
+.geme {
   font-size: 30px;
-
 }
 
+#photo1 {
+  display: block;
+    margin:  0 auto;
+}
+.box3 {
+  height: 100px;
+  width: auto;
+}
 
+.migi {
+  text-align: right;
+}
 
